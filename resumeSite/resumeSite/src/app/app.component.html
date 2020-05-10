@@ -1,3 +1,274 @@
-<div id="pageContent">
-  Marco Tipitto Cerruti
+<div id="header">
+    <h1 id="nameTitle">
+        Marco Tipitto Cerruti<br />
+    </h1>
+    <h2 id="jobDescription">
+        Full Stack Software Developer
+    </h2>
 </div>
+<ul class="navbar">
+    <li class="navbarItem" (click)="downloadResume()">
+        <i class="material-icons" style="vertical-align: middle;">file_download</i>
+        <p class="navbarText">Download Resume</p>
+    </li>
+    <li class="navbarItem" (click)="openLinkedIn()">
+        <i class="material-icons" style="vertical-align: middle;">open_in_new</i>
+        <p class="navbarText">LinkedIn</p>
+    </li>
+    <!-- <li class="navbarItem" (click)="contact = true; contactDialog()"> -->
+    <li class="navbarItem" (click)="contactEmail()">
+        <i class="material-icons" style="vertical-align: middle;">email</i>
+        <p class="navbarText">Contact</p>
+    </li>
+</ul>
+<div id="pageContent">
+    <div id="panels">
+        <div id="aboutMePanel">
+            <h2 id="subTitle">
+                About Me
+            </h2>
+            <p>
+                My name is Marco and I'm a full stack software developer based in Austin, TX. Creating and maintaining
+                intuitive interfaces and
+                efficient midrange systems that empower businesses and users is my passion.
+                <br /><br />
+                Originally a mechanical engineer, I fell into a software development role by accident; I have not looked
+                back since, although I
+                bring a creative, problem-solving engineer mentality everywhere I go.
+                <br /><br />
+                My hobbies include travelling and riding motorcycles; I cannot afford any other hobbies.
+            </p>
+        </div>
+
+        <div id="skillsPanel">
+            <h2 id="subTitle">
+                Skills and Technologies
+            </h2>
+            <p>
+                As a full stack developer, I am able to create and implement new web-based applications from start to
+                finish, front to back.
+                I am proficient with front-end technologies, including Angular and React, as well as the components of
+                these
+                technologies: ES6, HTML, Typescript, Javascript, node, SCSS/CSS, and more. I also have experience
+                implementing automated testing throughout UIs, like Karma, Jasmine and Protractor.
+                <br /><br />
+                I am also proficient with midrange technologies, mainly Springboot and microservices. I have
+                experience creating and implementing authentication systems with Spring and writing database calls and
+                querys and that the users can execute from the UIs.
+                In terms of implementation, I have experience with Pivotal Cloud Foundry, AWS, Jenkins and Cara.
+                Lastly, my back-end skills include Oracle PLSQL and IBM SQL databases, Linux servers, mainframe
+                transactions
+                and FTP softwares like Connect:Direct, Elit, SFTP and more.
+                <br /><br />
+                I am also bilingual: native fluency in both speaking, reading and writing English and Spanish.
+            </p>
+            <div class="collapsible">
+                <button class="collapsibleHeader" (click)="collapsible = !collapsible">{{collapsibleHeader}}</button>
+                <div [ngClass]="toggleAccordian()" class="row">
+                    <div class="column">
+                        <h5>Front end</h5>
+                        <ul>
+                            <li>Angular 7</li>
+                            <li>React 16</li>
+                            <li>TypeScript</li>
+                            <li>JavaScript</li>
+                            <li>HTML 5</li>
+                            <li>CSS 4</li>
+                            <li>SCSS</li>
+                            <li>ES6</li>
+                            <li>node</li>
+                            <li>npm</li>
+                            <li>yarn</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h5>Back end</h5>
+                        <ul>
+                            <li>SpringBoot 2.1</li>
+                            <li>Java 8</li>
+                            <li>PL/SQL</li>
+                            <li>Oracle DB</li>
+                            <li>Unix</li>
+                            <li>Bash Scripts</li>
+                            <li>Mainframe</li>
+                            <li>IBM DB2</li>
+                            <li>IMS</li>
+                            <li>JCL</li>
+                            <li>PL/1</li>
+                            <li>Connect:Direct</li>
+                            <li>Elit</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h5>Testing</h5>
+                        <ul>
+                            <li>Protactor</li>
+                            <li>Selenium</li>
+                            <li>Karma</li>
+                            <li>Jasmine</li>
+                            <li>JUnit</li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h5>Miscellaneous</h5>
+                        <ul>
+                            <li>git</li>
+                            <li>Jenkins</li>
+                            <li>CARA</li>
+                            <li>Docker</li>
+                            <li>z/OS Connect</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div id="experiencePanel">
+            <h2 id="subTitle">
+                Experience and Leadership
+            </h2>
+            <div id="parent">
+                <div id="companyLogo">
+                    <img src='../assets/logos/GM_logo.jpg' style="width: 150px; padding:12px">
+                </div>
+                <div id="wide">
+                    <h3>General Motors</h3>
+                    <p>
+                        I am currently employed at General Motors Company in Austin, TX. I am a full-stack developer
+                        working
+                        on the GM Mercosur (South America) sales order management systems. The databases and
+                        mainframes
+                        behind these systems do not have easy to use interfaces for business users, if any at all. I
+                        spend
+                        time meeting with users across Brazil and Argentina (inside GM corporate and the dealer
+                        network)
+                        and
+                        determine which new functionalities can be opened up to users or created.
+                        <br /><br />
+                        After gathering the requirements from the users directly, I will code the Angular UI and
+                        java
+                        SpringBoot and make DB changes if necessary.
+                        I will then demo the new functionality with the same users and deploy the application
+                        following
+                        CI/CD
+                        concepts.
+                        <br /><br />
+                        The work I do empowers users to be more productive and also reduces the amount of manual IT
+                        requests
+                        made, thereby allowing the rest of the IT team to do more innovation work.
+                    </p>
+                </div>
+            </div>
+            <div id="parent">
+                <div id="companyLogo">
+                    <img src='../assets/logos/microsoft-80660_960_720.png' style="width: 150px; padding:12px">
+                </div>
+                <div id="wide">
+                    <h3>Microsoft</h3>
+                    <p>
+                        During my time at the University of Arizona, I led a team that designed and created a fully
+                        automated
+                        datacenter model for Microsoft.
+                        <br /><br />
+                        This model made use of multiple algorithms and equations that calculated the cost and
+                        viability
+                        of
+                        constructing a new datacenter based user inputs, like desired zip code and datacenter size
+                        in
+                        megawatts.
+                        The model factored in capital expenditures like cost of land, construction and distance to
+                        internet
+                        backbone. The operational costs factored included power usage and cooling based on climate
+                        data
+                        and
+                        cost of
+                        labor.
+                        <br /><br />
+                        After all costs were calculated the model determined how much the datacenter would cost,
+                        what
+                        type of
+                        cooling system would be most efficient, how many floors the datacenter would need to be
+                        cheapest,
+                        and
+                        whether proposed automation systems (robots that would perform the server maintenance) made
+                        financial sense.
+                    </p>
+                </div>
+            </div>
+
+            <div id="parent">
+                <div id="companyLogo">
+                    <img src='../assets/logos/rehrig_10288349.jpg' style="width: 150px; padding:12px">
+                    <img src='../assets/logos/image.png' style="width: 150px; padding:12px">
+                </div>
+                <div id="wide">
+                    <h3>Other Engineering Experience</h3>
+                    <p>
+                        I had two internships while in college, at a plastics manufacturing company called Rehrig
+                        Pacific
+                        and an
+                        automotive concept and prototype company called GFMI.
+                        <br /><br />
+                        While at Rehrig I worked with a team of interns to design and build multiple automated
+                        systems,
+                        assembly
+                        jigs and safety covers that increased the
+                        manufacturing plant's output and improved safety. I also reduced forklift repair costs by
+                        50% by
+                        optimizing
+                        system pressures and speeds, developing a preventative
+                        maintenance schedule, and renegotiating terms with the forklift maintenance contractor.
+                        <br /><br />
+                        At GFMI, I worked with a team of engineers to produce and assemble new concept cars by
+                        utilizing
+                        CAD
+                        to
+                        create and modify vehicle components. I also bridged the gap between the engineers and the
+                        builders
+                        by
+                        communicating the design specifications through assembly instructions, cross sections and
+                        measurements.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="educationPanel">
+            <h2 id="subTitle">
+                Education
+            </h2>
+            <div id="parent">
+                <div id="companyLogo">
+                    <img src="../assets/logos/university_of_arizona.png" style="width: 150px; padding:12px">
+                </div>
+                <div id="wide">
+                    <h3>
+                        The University of Arizona
+                    </h3>
+                    <p>
+                        I graduated with a bachelors degree in Mechanical Engineering from the University of Arizona
+                        in
+                        Tucson.
+                        While there I received the Arizona Excellence Scholarship, multiple deans list recognitions
+                        and
+                        a
+                        cum laude
+                        distiction upon graduation.
+                        <br />
+                        While my degree may seem unrelated to my current career, I believe my engineering background
+                        has
+                        given me
+                        the problem-solving skills and adaptability needed to excel in the technology industry.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div [ngClass]="contactDialog()">
+    <div class="modal-content">
+        <span class="close" (click)="contact = false">&times;</span>
+        <p>Some text in the Modal..</p>
+    </div>
+</div> -->
