@@ -14,7 +14,7 @@ export class AppComponent {
 
 
   downloadResume() {
-    window.open('../assets/Resume_2019.pdf', '_blank')
+    window.open('../assets/Resume2020.pdf', '_blank')
   }
 
   openLinkedIn() {
